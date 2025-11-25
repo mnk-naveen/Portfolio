@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio Navbar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <nav class="text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        
+        <div class="flex-shrink-0 text-blue-900 text-xl font-bold">
+          Naveen Kumar M
+        </div>
+        <div class="hidden md:flex space-x-6">
+          <a href="#skill" class="hover:text-cyan-400 text-blue-900 transition">Skills</a>
+          <a href="#about" class="hover:text-cyan-400 text-blue-900 transition">About</a>
+          <a href="#project" class="hover:text-cyan-400 text-blue-900 transition">Projects</a>
+        </div>
+
+        <div class="md:hidden flex items-center">
+        <button id="menu-btn" class="focus:outline-none">
+            <svg class="h-6 w-6 bg-blue-900" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+        </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden px-4 pb-4">
+      <a href="#home" class="block py-2 text-blue-900 hover:text-cyan-400">Home</a>
+      <a href="#about" class="block py-2 text-blue-900 hover:text-cyan-400">About</a>
+      <a href="#projects" class="block py-2 text-blue-900 hover:text-cyan-400">Projects</a>
+    </div>
+  </nav>
+
+  
+  <section class="min-h-screen flex flex-col md:flex-row-reverse items-center justify-between px-6 md:px-20 py-10 bg-white">
+    
+    <div class="flex flex-col items-center md:items-end space-y-6">
+      
+      <img src="https://via.placeholder.com/250" alt="Profile"
+           class="w-64 h-64 rounded-xl shadow-lg object-cover border-4 border-gray-300" />
+
+      <div class="flex space-x-6">
+        <a href="https://wa.me/1234567890" target="_blank" class="text-green-500 text-3xl hover:scale-110 transition duration-300">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://instagram.com/yourusername" target="_blank" class="text-pink-500 text-3xl hover:scale-110 transition duration-300">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://github.com/yourusername" target="_blank" class="text-gray-800 text-3xl hover:scale-110 transition duration-300">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+
+
+    <div class="text-center md:text-left mt-10 md:mt-0">
+      <h1 class="text-3xl md:text-5xl font-bold text-gray-800 leading-snug">
+        Flutter and <br>
+        <span class="text-cyan-600">MERN Stack Developer</span>
+      </h1>
+    </div>
+
+  </section>
+  <section id="skill" class="py-16 px-6 md:px-12 lg:px-32 bg-gray-100">
+  <div class="mx-auto">
+
+    <h2 class="text-4xl font-bold mb-12 text-center text-gray-900">My Skills</h2>
+
+    <div class="mb-12">
+      <h3 class="text-2xl text-center font-semibold mb-6 ">Frontend Development</h3>
+      <div class="flex flex-wrap gap-6 justify-center">
+        
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition w-32">
+          <img src="https://img.icons8.com/color/96/html-5--v1.png" alt="HTML5" class="w-12 h-12 mx-auto mb-2">
+          <p class="text-sm font-medium text-center text-gray-700">HTML5</p>
+        </div>
+
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition w-32">
+          <img src="https://img.icons8.com/color/96/css3.png" alt="CSS3" class="w-12 h-12 mx-auto mb-2">
+          <p class="text-sm font-medium text-center text-gray-700">CSS3</p>
+        </div>
+
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition w-32">
+          <img src="https://img.icons8.com/color/96/bootstrap.png" alt="Bootstrap" class="w-12 h-12 mx-auto mb-2">
+          <p class="text-sm font-medium text-center text-gray-700">Bootstrap</p>
+        </div>
+
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition w-32">
+          <img src="https://img.icons8.com/color/96/javascript.png" alt="JavaScript" class="w-12 h-12 mx-auto mb-2">
+          <p class="text-sm font-medium text-center text-gray-700">JavaScript</p>
+        </div>
+
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition w-32">
+          <img src="https://img.icons8.com/color/96/react-native.png" alt="React" class="w-12 h-12 mx-automb-2">
+          <p class="text-sm fontmedium text-center text-gray-700">React</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="mb-12">
+      <h3 class="text-2xl font-semibold mb-6 text-center ">Backend Development</h3>
+      <div class="flex flex-wrap justify-center gap-6">
+        
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition w-32">
+          <img src="https://img.icons8.com/color/96/nodejs.png" alt="Node.js" class="w-12 h-12 mx-auto mb-2">
+          <p class="text-sm font-medium text-center text-gray-700">Node.js</p>
+        </div>
+
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition w-32">
+          <img src="https://img.icons8.com/fluency/96/express-js.png" alt="Express.js" class="w-12 h-12 mx-auto mb-2">
+          <p class="text-sm font-medium text-center text-gray-700">Express.js</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="mb-12">
+      <h3 class="text-2xl font-semibold mb-6 text-center ">Databases</h3>
+      <div class="flex flex-wrap justify-center gap-6">
+        
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition w-32">
+          <img src="https://img.icons8.com/color/96/mysql-logo.png" alt="MySQL" class="w-12 h-12 mx-auto mb-2">
+          <p class="text-sm font-medium text-center text-gray-700">MySQL</p>
+        </div>
+
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition w-32">
+          <img src="https://img.icons8.com/color/96/mongodb.png" alt="MongoDB" class="w-12 h-12 mx-auto mb-2">
+          <p class="text-sm font-medium text-center text-gray-700">MongoDB</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div>
+      <h3 class="text-2xl font-semibold mb-6 text-center ">Mobile App Development</h3>
+      <div class="flex flex-wrap justify-center gap-6"> 
+        
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition w-32">
+          <img src="https://img.icons8.com/color/96/flutter.png" alt="Flutter" class="w-12 h-12 mx-auto mb-2">
+          <p class="text-sm font-medium text-center text-gray-700">Flutter</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+ 
+
+  <section id="project">
+     <section class="py-12 px-6 max-w-7xl mx-auto">
+    <h1 class="text-4xl font-bold text-center mb-10">My Projects</h1>
+
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+      <!-- Card 1 -->
+      <div class="bg-white rounded-xl shadow-md hover:shadow-2xl transition-shadow duration-300 overflow-hidden">
+        <img src="Assets/thindukal thalapakatti.PNG" alt="Project 1" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h2 class="text-xl font-semibold mb-2">Thindukkal thalapakatti</h2>
+          <p class="text-gray-600 text-sm mb-4">A clone of Thindukkal thalapakatti's website</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="bg-gray-200 text-gray-700 text-xs font-medium px-2 py-1 rounded">HTML</span>
+            <span class="bg-gray-200 text-gray-700 text-xs font-medium px-2 py-1 rounded">CSS</span>
+          </div>
+          <div class="flex justify-between items-center text-sm font-medium">
+            <a href="https://mnk-naveen.github.io/restaurant/" target="_blank" class="text-blue-600 hover:text-blue-800">Live Demo</a>
+            <!-- <a href="https://github.com/mnk-naveen/restaurant" target="_blank" class="text-gray-700 hover:text-gray-900">GitHub</a> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-xl shadow-md hover:shadow-2xl transition-shadow duration-300 overflow-hidden">
+        <img src="Assets/organic foods.PNG" alt="Project 2" class="w-full h-48 object-cover">
+        <div class="p-5"> 
+          <h2 class="text-xl font-semibold mb-2">Organic Delivery</h2>
+          <p class="text-gray-600 text-sm mb-4">A delivery website about Dairy products and veges</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="bg-gray-200 text-gray-700 text-xs font-medium px-2 py-1 rounded">HTML</span>
+            <span class="bg-gray-200 text-gray-700 text-xs font-medium px-2 py-1 rounded">CSS</span>
+            <span class="bg-gray-200 text-gray-700 text-xs font-medium px-2 py-1 rounded">Bootstrap</span>
+          </div>
+          <div class="flex justify-between items-center text-sm font-medium">
+            <a href="https://mnk-naveen.github.io/organicfoods/organic-1.0.0/" class="text-blue-600 hover:text-blue-800">Live Demo</a>
+            <!-- <a href="https://github.com/mnk-naveen/organicfoods/tree/main/organic-1.0.0" class="text-gray-700 hover:text-gray-900">GitHub</a> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded-xl shadow-md hover:shadow-2xl transition-shadow duration-300 overflow-hidden">
+        <img src="Assets/online store.PNG" alt="Project 3" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h2 class="text-xl font-semibold mb-2">Online Store</h2>
+          <p class="text-gray-600 text-sm mb-4">Ecommerce website about the pc components</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="bg-gray-200 text-gray-700 text-xs font-medium px-2 py-1 rounded">HTML</span>
+            <span class="bg-gray-200 text-gray-700 text-xs font-medium px-2 py-1 rounded">CSS</span>
+            <span class="bg-gray-200 text-gray-700 text-xs font-medium px-2 py-1 rounded">Bootstrap</span>
+            <span class="bg-gray-200 text-gray-700 text-xs font-medium px-2 py-1 rounded">Javascript</span>
+          </div>
+          <div class="flex justify-between items-center text-sm font-medium">
+            <a href="https://mnk-naveen.github.io/digitalstore/" class="text-blue-600 hover:text-blue-800">Live Demo</a>
+            <!-- <a href="https://github.com/mnk-naveen/digitalstore" class="text-gray-700 hover:text-gray-900">GitHub</a> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-white rounded-xl shadow-md hover:shadow-2xl transition-shadow duration-300 overflow-hidden">
+        <img src="Assets/educational consultancy.PNG" alt="Project 4" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h2 class="text-xl font-semibold mb-2">Educational consultancy</h2>
+          <p class="text-gray-600 text-sm mb-4">Built with cool features and responsive design.</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="bg-gray-200 text-gray-700 text-xs font-medium px-2 py-1 rounded">HTML</span>
+            <span class="bg-gray-200 text-gray-700 text-xs font-medium px-2 py-1 rounded">CSS</span>
+            <span class="bg-gray-200 text-gray-700 text-xs font-medium px-2 py-1 rounded">Javascript</span>
+          </div>
+          <div class="flex justify-between items-center text-sm font-medium">
+            <a href="https://mnk-naveen.github.io/educational-consultancy/" class="text-blue-600 hover:text-blue-800">Live Demo</a>
+            <!-- <a href="https://github.com/mnk-naveen/educational-consultancy" class="text-gray-700 hover:text-gray-900">GitHub</a> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="bg-white rounded-xl shadow-md hover:shadow-2xl transition-shadow duration-300 overflow-hidden">
+        <img src="Assets/ReactEnquiry.PNG" alt="Project 5" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h2 class="text-xl font-semibold mb-2">Enquiry Management</h2>
+          <p class="text-gray-600 text-sm mb-4">A Institution managing the Students Enquiry entry and list view </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="bg-gray-200 text-gray-700 text-xs font-medium px-2 py-1 rounded">React.js</span>
+            <span class="bg-gray-200 text-gray-700 text-xs font-medium px-2 py-1 rounded">Node.js</span>
+            <span class="bg-gray-200 text-gray-700 text-xs font-medium px-2 py-1 rounded">Express</span>
+            <span class="bg-gray-200 text-gray-700 text-xs font-medium px-2 py-1 rounded">Mysql</span>
+          </div>
+          <div class="flex justify-between items-center text-sm font-medium">
+            <!-- <a href="https://mnk-naveen.github.io/MISProject/" class="text-blue-600 hover:text-blue-800">Preview</a> -->
+            <!-- <a href="#" class="text-gray-700 hover:text-gray-900">GitHub</a> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="bg-white rounded-xl shadow-md hover:shadow-2xl transition-shadow duration-300 overflow-hidden">
+        <img src="Assets/Reacr batch management.PNG" alt="Project 6" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h2 class="text-xl font-semibold mb-2">Batch Management</h2>
+          <p class="text-gray-600 text-sm mb-4">Student Batch Enquiry, Register, Allocation and Correction</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="bg-gray-200 text-gray-700 text-xs font-medium px-2 py-1 rounded">HTML</span>
+            <span class="bg-gray-200 text-gray-700 text-xs font-medium px-2 py-1 rounded">CSS</span>
+            <span class="bg-gray-200 text-gray-700 text-xs font-medium px-2 py-1 rounded">tailwindcss</span>
+            <span class="bg-gray-200 text-gray-700 text-xs font-medium px-2 py-1 rounded">React.js</span>
+            <span class="bg-gray-200 text-gray-700 text-xs font-medium px-2 py-1 rounded">Node.js</span>
+            <span class="bg-gray-200 text-gray-700 text-xs font-medium px-2 py-1 rounded">Express.js</span>
+            <span class="bg-gray-200 text-gray-700 text-xs font-medium px-2 py-1 rounded">Mysql</span>
+          </div>
+          <div class="flex justify-between items-center text-sm font-medium">
+            <!-- <a href="#" class="text-blue-600 hover:text-blue-800">Live Demo</a> -->
+            <!-- <a href="#" class="text-gray-700 hover:text-gray-900">GitHub</a> -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  </section>
+   
+  <section id="about" class="py-16 px-6 bg-white md:px-12 lg:px-32">
+    <div class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
+      
+      <!-- Text Content -->
+      <div class="flex-1">
+        <h2 class="text-4xl font-bold mb-4 text-gray-900">About Me</h2>
+        <p class="text-lg leading-relaxed mb-4 text-gray-700">
+          Hi! I'm <span class="font-semibold text-indigo-600">Naveen kumar M</span>, a passionate 
+          <span class="italic">Flutter Full Stack Developer</span> with a love for crafting beautiful, user-friendly websites and Mobile App. 
+          I specialize in building responsive interfaces using modern tools like 
+          <span class="font-medium">Tailwind CSS, Reactjs, Nodejs and Flutter</span>.
+        </p>
+        <p class="text-lg leading-relaxed text-gray-700">
+          I enjoy turning complex problems into simple, elegant solutions. When I'm not coding, 
+          you'll find me exploring design trends, hiking, or sipping good coffee.
+        </p>
+        <!-- <a href="#contact" class="inline-block mt-6 bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-md shadow transition">
+          Contact Me
+        </a> -->
+      </div>
+
+    </div>
+  </section>
+    
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
